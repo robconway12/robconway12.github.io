@@ -5,53 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Rob Conway Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+
 <body background="assets/images/background.png">
-    <header class="clearfix">
-        <div class="container">
-            <h1>Rob Conway</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="portfolio.html" id="navdivision">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <section>
-        <div class="container main-content">
-            <h2>Portfolio</h2>
-            <hr>
-            <div id="imggroup">
-                <span class="imgtile">
-                    <img src="assets/images/hangman.jpg" class="portfolioimg">
-                    <p class="imglabel">Hangman</p>
-                </span>
-                <span class="imgtile">
-                    <img src="assets/images/videogame.jpg" class="portfolioimg">
-                    <p  class="imglabel">RPG Game</p>
-                </span>
-                <span class="imgtile">
-                    <img src="assets/images/trivia.png" class="portfolioimg">
-                    <p  class="imglabel">Trivia Game</p>
-                </span>
-                <span class="imgtile">
-                    <img src="assets/images/info.jpg" class="portfolioimg">
-                    <p  class="imglabel">Rutgers Info Widget</p>
-                </span>
-                <span class="imgtile">
-                    <img src="assets/images/rps.png" class="portfolioimg">
-                    <p  class="imglabel">Rock Paper Scissors</p>
-                </span>
+    <header class="bg-light mb-3 shadow">
+            
+            <div class="container clearfix">
+            <h1 class="p-3 mb-0 bg-info text-white rounded text-wrap float-left align-bottom">Rob Conway</h1>
+                <nav class="nav nav-pills flex-column flex-sm-row float-right position-relative mt-4">
+                    <a class="flex-sm-fill text-sm-center nav-link text-info" href="index.html">About</a>
+                    <a class="flex-sm-fill text-sm-center nav-link bg-info active" href="portfolio.html">Portfolio</a>
+                    <a class="flex-sm-fill text-sm-center nav-link text-info" href="contact.html">Contact</a>
+                </nav>
             </div>
-        </div>
-    </section>
-<footer id="main-footer">
-        <p><small>&copy;2019 Rob Conway  All rights reserved</small></p>
+    
+        </header>
+    
+        <div class="container">
+            <section class="p-3 mb-2 bg-light text-dark">
+                <div class="container clearfix">
+                    <h2 class="text-info">Portfolio</h2>
+                    
+                    <hr>
 
+                    <div class="flex-wrap">
+                        <div class="card m-5 shadow float-left" style="width: 300px;">
+                            <img src="assets/images/hangman.jpg" class="card-img-top" alt="Hangman">
+                                <div class="card-body">
+                                    <p class="card-text text-center bg-info text-white p-3">Hangman</p>
+                                </div>
+                        </div>
+
+                        <div class="card m-5 shadow float-left" style="width: 300px;">
+                            <img src="assets/images/videogame.jpg" class="card-img-top" alt="RPG Game">
+                                <div class="card-body">
+                                    <p class="card-text text-center bg-info text-white p-3">RPG Game</p>
+                                </div>
+                        </div>
+
+                        <div class="card m-5 shadow float-left" style="width: 300px;">
+                            <img src="assets/images/trivia.png" class="card-img-top" alt="Trivia Game">
+                                <div class="card-body">
+                                    <p class="card-text text-center bg-info text-white p-3">Trivia Game</p>
+                                </div>
+                        </div>
+
+                        <div class="card m-5 shadow float-left" style="width: 300px;">
+                            <img src="assets/images/info.jpg" class="card-img-top" alt="Rutgers Info Widget">
+                                <div class="card-body">
+                                    <p class="card-text text-center bg-info text-white p-3">Rutgers Info Widget</p>
+                                </div>
+                        </div>
+
+                        <div class="card m-5 shadow float-left" style="width: 300px;">
+                            <img src="assets/images/RPS.png" class="card-img-top" alt="Rock Paper Scissors">
+                                <div class="card-body">
+                                    <p class="card-text text-center bg-info text-white p-3">Rock Paper Scissors</p>
+                                </div>
+                    </div>
+                </div>
+
+                </div>
+            </section>
+        </div>
+
+    <footer class="text-center bg-secondary text-white border-top border-info">
+        <p><small>&copy;2019 Rob Conway - All rights reserved</small></p>
     </footer>
+    
 </body>
 </html>

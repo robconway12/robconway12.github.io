@@ -54,6 +54,11 @@ input {
     border-radius: 5px;
 }
 
+input:invalid {
+    box-shadow: 3px 3px 10px maroon;
+    border-color: red;
+}
+
 textarea {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #202020;
@@ -63,6 +68,7 @@ textarea {
     margin-bottom: 20px;
     display: block;
     width: 910px;
+    height: 200px;
     border-radius:5px;
     max-width: 910px;
     max-height: 400px;
@@ -73,7 +79,7 @@ button {
     font-size: 11pt;
     background-color: #4aaaa5;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-style: none;
     border-radius: 5px;
 }
@@ -81,7 +87,17 @@ button {
 button:hover {
     background-color: #5dcfca;
     transition: .5s;
+    cursor: pointer;
   }
+
+button:active {
+background-color: #449692;
+transition: 3ms;
+cursor: pointer;
+-ms-transform: scale(0.9, 0.9); /* IE 9 */
+-webkit-transform: scale(0.9, 0.9); /* Safari */
+transform: scale(0.9, 0.9);
+}
 
 html, body{
     height: 100%
@@ -172,7 +188,7 @@ nav ul {
   li a:hover {
     background-color: #4aaaa5;
     color: white;
-    transition: 2s;
+    transition: 1s;
   }
 
   #navdivision {
@@ -191,11 +207,13 @@ nav ul {
     display: inline;
     left: 0;
     z-index: 888;
+    position: relative;
   }
 
-  #imggroup {
-    margin: auto;
-    width: 80%;
+  .flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
   }
 
   .imglabel {
@@ -206,9 +224,8 @@ nav ul {
     padding: 20px 0px;
     font-size: 10pt;
     width: 300px;
-    position: relative;
-    bottom: 120px;
+    position: absolute;
+    bottom: 0;
     display: inline;
-    left: 0;
     z-index: 999;
   }
