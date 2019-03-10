@@ -5,53 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Rob Conway Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
 </head>
-
 <body background="assets/images/background.png">
-
-    <header class="bg-light mb-3 shadow">
-            
-        <div class="container clearfix">
-            <h1 class="p-3 mb-0 bg-info text-white rounded text-wrap float-left align-bottom">Rob Conway</h1>
-                <nav class="nav nav-pills flex-column flex-sm-row float-right position-relative mt-4">
-                    <a class="flex-sm-fill text-sm-center nav-link text-info" href="index.html">About</a>
-                    <a class="flex-sm-fill text-sm-center nav-link text-info" href="portfolio.html">Portfolio</a>
-                    <a class="flex-sm-fill text-sm-center nav-link bg-info active" href="contact.html">Contact</a>
-                </nav>
+    <header class="clearfix">
+        <div class="container">
+            <h1 class="nametag">Rob Conway</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="portfolio.html" id="navdivision">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-
     </header>
 
-    <div class="container">
-    <section class="p-3 mb-2 bg-light text-dark">
-        <div class="container clearfix">
-            <h2 class="text-info">Contact</h2>
-            
-            <hr>
-
-            <form>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="John Smith">
-                </div>
-                <div class="form-group">
-                  <label for="emailaddress">Email address</label>
-                  <input type="email" class="form-control" id="emailaddress" placeholder="name@example.com">
-                </div>
-                <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea class="form-control" id="message" rows="5"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary bg-info">Submit</button>
-            </form>
+    <section>
+        <div class="container main-content">
+        <h2>Contact</h2>
+        <hr>
+        <form>
+            <fieldset>
+                <span>Name:</span> <input type="text" name="name" placeholder="John Smith">
+                <span>Email:</span> <input type="email" name="email" placeholder="example@email.com">
+                <span>Message:</span> <textarea name="message" placeholder="Enter message..." height=300px>
+                </textarea>
+                <button type="button">Submit</button>
+            </fieldset>
+        </form>
         </div>
-    </section>   
-    </div> 
+    </section>    
 
-    <footer class="vw-auto text-center bg-secondary text-white border-top border-info">
+    <footer id="main-footer">
         <p><small>&copy;2019 Rob Conway - All rights reserved</small></p>
-    </footer>
 
+    </footer>
 </body>
 </html>

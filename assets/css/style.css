@@ -8,7 +8,7 @@ p {
     font-size: 10pt;
 }
 
-h1 {
+.nametag {
     font-family: 'Georgia', 'Times', 'Times New Roman', serif;
     color: #fff;
     background-color: #4aaaa5;
@@ -176,31 +176,31 @@ nav ul {
     left: 30px;
   }
   
-  li a {
+li a {
     display: block;
     padding: 8px 16px;
     text-align: center;
     float: left;
     text-decoration: none;
     color: #777;
-  }
-  
-  li a:hover {
+}
+
+li a:hover {
     background-color: #4aaaa5;
     color: white;
     transition: 1s;
-  }
+}
 
-  #navdivision {
+#navdivision {
     border-left-color: #777;
     border-left-style: solid;
     border-left-width: 1px; 
     border-right-color: #777;
     border-right-style: solid;
     border-right-width: 1px; 
-  }
-  
-  .portfolioimg {
+}
+
+.portfolioimg {
     margin: 20px;
     box-shadow: 1px 1px 7px gray;
     border-radius: 5px;
@@ -208,15 +208,15 @@ nav ul {
     left: 0;
     z-index: 888;
     position: relative;
-  }
+}
 
-  .flex-container {
+.flex-container {
     display: flex;
     flex-flow: row wrap;
     align-content: space-between;
-  }
+}
 
-  .imglabel {
+.imglabel {
     background-color: #4aaaa5;
     color: #fff;
     text-align: center;
@@ -228,4 +228,92 @@ nav ul {
     bottom: 0;
     display: inline;
     z-index: 999;
-  }
+}
+
+@media only screen and (max-width: 980px) {
+
+    .container {
+        width: 700px;
+        margin-left: 50px;
+        }
+
+    .portfolioimg {
+        width: 300px;
+    }
+
+    .imglabel, img {
+        width: 300px;
+    }
+
+    input, textarea {
+        max-width: 650px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .container {
+        width: 600px;
+        margin-left: 50px;
+        }
+
+    .portfolioimg {
+        width: 260px;
+    }
+
+    .imglabel, img {
+        width: 260px;
+    }
+
+    input, textarea {
+        max-width: 550px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    
+    .container {
+        width: 500px;
+        margin-left: 50px;
+    }
+
+    .portfolioimg {
+        width: 200px;
+    }
+
+    img {
+        width: 200px;
+    }
+
+    .imglabel {
+        height: 20px;
+        padding: 5px;
+        width: 190px;
+    }
+
+    input, textarea {
+        max-width: 450px;
+    }
+
+    header {
+        position: static;
+    }
+
+    .nametag {
+        position: static;
+        width: 100%;
+        text-align: center;
+        float: top;
+        margin: auto;
+    }
+
+    nav li {
+        width: 100%;
+        top: -30px;
+        left: -140px;
+        float: bottom;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+    }
+}
